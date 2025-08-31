@@ -5,17 +5,17 @@ import { NetworkConfig } from '../config.types'
 import { CSP_ISSUE_POOL_IDS } from '../../shared/data/csp-issue'
 import { SupportedWrapHandler } from '@repo/lib/modules/swap/swap.types'
 import { PERMIT2, balancerV3Contracts } from '@balancer/sdk'
-import { mainnet } from 'viem/chains'
+import { pulsechain } from 'viem/chains'
 
 const networkConfig: NetworkConfig = {
-  chainId: 1,
-  name: 'Ethereum Mainnet',
-  shortName: 'Ethereum',
+  chainId: 369,
+  name: 'PulseChain Mainnet',
+  shortName: 'PulseChain',
   chain: GqlChain.Mainnet,
   iconPath: '/images/chains/MAINNET.svg',
   blockExplorer: {
-    baseUrl: 'https://etherscan.io',
-    name: 'Etherscan',
+    baseUrl: 'https://ipfs.scan.pulsechain.com/',
+    name: 'Pulsescan',
   },
   tokens: {
     addresses: {
